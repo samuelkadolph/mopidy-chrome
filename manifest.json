@@ -55,5 +55,5 @@
   },
   "permissions": ["*://*/*", "storage"],
   "short_name": "Mopidy",
-  "version": "0.1.2"
+  "version": "0.1.4"
 }
