@@ -1,0 +1,59 @@
+{
+  "background": {
+    "page": "background.html"
+  },
+  "browser_action": {
+    "default_icon": "images/icon38.png",
+    "default_popup": "popup.html"
+  },
+  "commands": {
+    "0_previous": {
+      "description": "Previous track",
+      "global": true,
+      "suggested_key": {
+        "default": "Ctrl+Shift+7"
+      }
+    },
+    "1_playPause": {
+      "description": "Play/pause",
+      "global": true,
+      "suggested_key": {
+        "default": "Ctrl+Shift+8"
+      }
+    },
+    "2_next": {
+      "description": "Next track",
+      "global": true,
+      "suggested_key": {
+        "default": "Ctrl+Shift+9"
+      }
+    },
+    "3_muteUnmute": {
+      "description": "Mute/unmute",
+      "global": true,
+      "suggested_key": {
+        "default": "Ctrl+Shift+0"
+      }
+    },
+    "4_volumeDown": {
+      "description": "Volume down"
+    },
+    "5_volumeUp": {
+      "description": "Volume up"
+    }
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "manifest_version": 2,
+  "name": "Mopidy",
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
+  "permissions": ["*://*/*", "storage"],
+  "short_name": "Mopidy",
+  "version": "0.1.2"
+}

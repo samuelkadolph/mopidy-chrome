@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <title>Mopidy</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/popup.css" />
+</head>
+<body class="online paused unmuted">
+  <div id="connecting" class="fullscreen">
+    <h2>Connecting</h2>
+    <img src="images/icon48.png" />
+    <p></p>
+  </div>
+
+  <div id="offline" class="fullscreen">
+    <h2>Offline</h2>
+    <img src="images/offline.png" />
+    <p id="error"></p>
+    <!-- TODO: Retry -->
+  </div>
+
+  <div id="controls">
+    <span id="song" class="text"></span>
+    <span id="album" class="text"></span>
+    <span id="artist" class="text"></span>
+    <span id="time" class="time"></span>
+    <input id="seek" type="range" min="0" value="0" max="36000" tabindex="-1" disabled="disabled" />
+    <span id="length" class="time"></span>
+    <input id="previous" type="image" src="images/previous.png" tabindex="-1" />
+    <input id="play" type="image" src="images/play.png" tabindex="-1" />
+    <input id="pause" type="image" src="images/pause.png" tabindex="-1" />
+    <input id="next" type="image" src="images/next.png" tabindex="-1" />
+    <input id="mute" type="image" src="images/mute.png" tabindex="-1" />
+    <input id="unmute" type="image" src="images/unmute.png" tabindex="-1" />
+    <input id="volume" type="range" min="0" value="0" max="100" tabindex="-1" disabled="disabled" />
+  </div>
+
+  <script type="text/javascript" src="javascripts/popup.js"></script>
+</body>
+</html>

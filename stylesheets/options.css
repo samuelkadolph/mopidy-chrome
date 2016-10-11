@@ -1,0 +1,44 @@
+@keyframes spin { 100% { transform: rotate(-360deg) } }
+
+body { width: 400px; margin: 14px; }
+
+div.development { display: none }
+body.development div.development { display: flex }
+
+.setting {
+  height: 24px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.setting input[type="text"] {
+  width: 285px;
+}
+.setting label {
+  display: inline-block;
+  width: 50px
+}
+
+.checkbox {
+  padding-left: 50px;
+}
+.checkbox input[type="checkbox"] {
+  margin-right: 5px;
+}
+.checkbox label {
+  width: 267px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 14px;
+}
+.buttons button {
+  margin-left: 6px;
+}
+
+#url-test { display: inline-block; height: 24px; transition: background-image 0.5s ease; vertical-align: middle; width: 24px }
+#url-test.spin { animation: spin 2s linear infinite; background: url("../images/spinner.png") no-repeat center center }
+#url-test.ok { background: url("../images/ok.png") no-repeat center center }
+#url-test.fail { background: url("../images/fail.png") no-repeat center center }

@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <title>Mopidy Options</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/options.css" />
+</head>
+
+<body>
+  <div class="setting">
+    <label for="url">URL:</label>
+    <input id="url" type="text" />
+    <span id="url-test"></span>
+  </div>
+
+  <div class="setting checkbox development">
+    <input id="mock" type="checkbox" />
+    <label for="mock">Use Mock Server</label>
+  </div>
+
+  <div class="buttons">
+    <button id="cancel">Cancel</button>
+    <button id="ok">OK</button>
+  </div>
+
+  <script type="text/javascript" src="javascripts/mopidy.js"></script>
+  <script type="text/javascript" src="javascripts/options.js"></script>
+</body>
+</html>
